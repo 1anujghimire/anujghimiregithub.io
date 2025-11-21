@@ -1,0 +1,292 @@
+/* ===================================
+   RESPONSIVE DESIGN - MOBILE FIRST
+   =================================== */
+
+/* Base styles are mobile-first (320px+) */
+
+/* ===================================
+   TABLET BREAKPOINT (768px+)
+   =================================== */
+
+@media (min-width: 768px) {
+    /* Typography adjustments */
+    :root {
+        --font-size-base: 18px;
+        --font-size-lg: 28px;
+        --font-size-xl: 36px;
+        --font-size-2xl: 44px;
+        --font-size-3xl: 56px;
+        --font-size-4xl: 64px;
+    }
+    
+    /* Container */
+    .container {
+        padding: 0 var(--space-4);
+    }
+    
+    /* Section spacing */
+    section {
+        padding: var(--space-12) 0;
+    }
+    
+    /* Hero Section */
+    .hero-name {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-xl);
+    }
+    
+    /* Skills Grid - 3 columns on tablet */
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-4);
+    }
+    
+    /* Projects Grid */
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Social Links - keep horizontal */
+    .social-links {
+        gap: var(--space-6);
+    }
+}
+
+/* ===================================
+   DESKTOP BREAKPOINT (1024px+)
+   =================================== */
+
+@media (min-width: 1024px) {
+    /* Typography adjustments */
+    :root {
+        --font-size-4xl: 72px;
+    }
+    
+    /* Hero Section - larger on desktop */
+    .hero-name {
+        font-size: var(--font-size-4xl);
+    }
+    
+    .profile-photo {
+        width: 220px;
+        height: 220px;
+    }
+    
+    /* Skills Grid - 5 columns on desktop */
+    .skills-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    /* Projects Grid - 3 columns on desktop */
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ===================================
+   MOBILE SPECIFIC (max-width: 767px)
+   =================================== */
+
+@media (max-width: 767px) {
+    /* Ensure minimum font sizes */
+    :root {
+        --font-size-xs: 14px;
+        --font-size-sm: 16px;
+        --font-size-base: 16px;
+        --font-size-lg: 20px;
+        --font-size-xl: 24px;
+        --font-size-2xl: 28px;
+        --font-size-3xl: 32px;
+        --font-size-4xl: 40px;
+    }
+    
+    /* Landing Page */
+    .landing-title {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .landing-subtitle {
+        font-size: var(--font-size-lg);
+    }
+    
+    .enter-button {
+        padding: var(--space-2) var(--space-4);
+        font-size: var(--font-size-sm);
+    }
+    
+    /* Section spacing - reduced on mobile */
+    section {
+        padding: var(--space-6) 0;
+    }
+    
+    /* Hero Section */
+    .hero-section {
+        min-height: 100vh;
+        padding: var(--space-4) 0;
+    }
+    
+    .hero-name {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-lg);
+    }
+    
+    .hero-education,
+    .hero-location {
+        font-size: var(--font-size-sm);
+    }
+    
+    .profile-photo {
+        width: 160px;
+        height: 160px;
+    }
+    
+    /* Skills Grid - 2 columns on mobile */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-2);
+    }
+    
+    .skill-card {
+        padding: var(--space-3);
+    }
+    
+    .skill-logo {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .skill-icon {
+        font-size: var(--font-size-xl);
+    }
+    
+    .skill-name {
+        font-size: var(--font-size-base);
+    }
+    
+    /* Projects Grid - single column on mobile */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+    }
+    
+    /* Social Links - vertical stack on mobile */
+    .social-links {
+        flex-direction: column;
+        gap: var(--space-3);
+    }
+    
+    .social-link {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    /* Ensure touch targets are at least 44x44px */
+    .theme-toggle {
+        width: 48px;
+        height: 48px;
+        top: var(--space-2);
+        right: var(--space-2);
+    }
+    
+    .social-link {
+        min-height: 44px;
+    }
+    
+    /* Section titles */
+    .section-title {
+        font-size: var(--font-size-xl);
+        margin-bottom: var(--space-4);
+    }
+}
+
+/* ===================================
+   EXTRA SMALL DEVICES (max-width: 375px)
+   =================================== */
+
+@media (max-width: 375px) {
+    .container {
+        padding: 0 var(--space-2);
+    }
+    
+    .hero-name {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .profile-photo {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .skill-card {
+        padding: var(--space-2);
+    }
+}
+
+/* ===================================
+   LARGE DESKTOP (min-width: 1440px)
+   =================================== */
+
+@media (min-width: 1440px) {
+    :root {
+        --container-max-width: 1400px;
+    }
+    
+    .hero-name {
+        font-size: 80px;
+    }
+    
+    .profile-photo {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+/* ===================================
+   PRINT STYLES
+   =================================== */
+
+@media print {
+    .theme-toggle,
+    .scroll-indicator {
+        display: none;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .hero-section {
+        background: white;
+        color: black;
+        min-height: auto;
+    }
+    
+    .hero-content {
+        color: black;
+    }
+}
+
+/* ===================================
+   REDUCED MOTION
+   =================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}

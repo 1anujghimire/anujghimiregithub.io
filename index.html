@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anuj Ghimire - Student Developer specializing in Python, Web Development, Discord Bots, and Affiliate Marketing">
+    <meta name="keywords" content="Anuj Ghimire, Developer, Python, Discord Bot, Web Development, Nepal">
+    <meta name="author" content="Anuj Ghimire">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Anuj Ghimire - Student Developer">
+    <meta property="og:description" content="Portfolio of Anuj Ghimire - Python Developer, Discord Bot Creator, and Digital Marketer">
+    <meta property="og:type" content="website">
+    
+    <title>Anuj Ghimire - Student Developer Portfolio</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="animations.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="custom-cursor">
+    <!-- Landing Page - Click to View -->
+    <div id="landing-page" class="landing-page">
+        <div class="landing-content">
+            <h1 class="landing-title">Anuj Ghimire</h1>
+            <p class="landing-subtitle">Student Developer</p>
+            <button id="enter-btn" class="enter-button">Click to View Portfolio</button>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </div>
+
+    <!-- Main Portfolio Content (Hidden Initially) -->
+    <div id="main-content" class="main-content hidden">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Profile Photo - Will be populated dynamically -->
+                <div class="profile-photo-container">
+                    <img id="profile-photo" src="profile.jpg" alt="Anuj Ghimire Profile Photo" class="profile-photo" loading="eager">
+                </div>
+                
+                <!-- Hero Text -->
+                <div class="hero-text">
+                    <h1 id="hero-name" class="hero-name">Anuj Ghimire</h1>
+                    <p id="hero-title" class="hero-title">Student Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div id="skills-grid" class="skills-grid">
+                <!-- Skills will be populated dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects & Achievements</h2>
+            <div id="projects-grid" class="projects-grid">
+                <!-- Projects will be populated dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Connect With Me</h2>
+            <div id="social-links" class="social-links">
+                <!-- Social links will be populated dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (Education & Location) -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p id="hero-education" class="about-text">Class 11, British Grammar School</p>
+                <p id="hero-location" class="about-text">Rupandehi, Nepal</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Anuj Ghimire. All rights reserved.</p>
+        </div>
+    </footer>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Scripts -->
+    <script src="theme.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

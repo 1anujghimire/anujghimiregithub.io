@@ -1,0 +1,67 @@
+{
+  "personal": {
+    "name": "Anuj Ghimire",
+    "title": "Student Developer",
+    "education": "Class 11, British Grammar School",
+    "location": "Rupandehi, Nepal",
+    "photo": "assets/images/profile.jpg"
+  },
+  "skills": [
+    {
+      "name": "Python",
+      "level": "intermediate",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+    },
+    {
+      "name": "HTML",
+      "level": "intermediate",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+    },
+    {
+      "name": "CSS",
+      "level": "intermediate",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+    },
+    {
+      "name": "JavaScript",
+      "level": "intermediate",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+    },
+    {
+      "name": "SQL",
+      "level": "beginner",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Discord Bot Development",
+      "description": "Created feature-rich Discord bots including 24/7 online bot with rich presence and multi-feature moderation system",
+      "tags": ["Python", "Discord API", "Bot Development"]
+    },
+    {
+      "title": "Community Management",
+      "description": "Owner role contributor to a thriving Discord community with 40,000+ members",
+      "tags": ["Leadership", "Community Building"]
+    },
+    {
+      "title": "Affiliate Marketing",
+      "description": "Successfully generated $1,000+ revenue through strategic affiliate marketing campaigns",
+      "tags": ["Marketing", "Business Development"]
+    }
+  ],
+  "social": {
+    "discord": {
+      "username": "ninjahuz",
+      "url": "https://discord.com/users/ninjahuz"
+    },
+    "instagram": {
+      "username": "ninjahuz",
+      "url": "https://instagram.com/ninjahuz"
+    },
+    "linkedin": {
+      "username": "1anujghimire",
+      "url": "https://linkedin.com/in/1anujghimire"
+    }
+  }
+}

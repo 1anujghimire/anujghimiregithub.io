@@ -1,0 +1,231 @@
+/* ===================================
+   ANIMATIONS & TRANSITIONS
+   =================================== */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide Up Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide In From Left */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide In From Right */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Scale In Animation */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* ===================================
+   ANIMATION CLASSES
+   =================================== */
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.slide-in-right {
+    animation: slideInRight 0.6s ease-out forwards;
+}
+
+.scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+}
+
+/* Initial state for animated elements */
+.animate-on-scroll {
+    opacity: 0;
+}
+
+.animate-on-scroll.animated {
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+/* Staggered animation delays */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+
+/* ===================================
+   PAGE LOAD ANIMATIONS
+   =================================== */
+
+.hero-content {
+    animation: fadeIn 1s ease-out;
+}
+
+.profile-photo {
+    animation: scaleIn 0.8s ease-out 0.2s backwards;
+}
+
+.hero-text {
+    animation: slideUp 0.8s ease-out 0.4s backwards;
+}
+
+/* ===================================
+   HOVER EFFECTS
+   =================================== */
+
+.hover-lift {
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.hover-lift:hover {
+    transform: translateY(-4px);
+}
+
+.hover-scale {
+    transition: transform var(--transition-base);
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* ===================================
+   LOADING STATES
+   =================================== */
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.skeleton {
+    background: linear-gradient(
+        90deg,
+        var(--surface) 0%,
+        var(--border) 50%,
+        var(--surface) 100%
+    );
+    background-size: 1000px 100%;
+    animation: shimmer 2s infinite;
+}
+
+/* ===================================
+   SMOOTH TRANSITIONS
+   =================================== */
+
+/* Theme transition */
+body,
+.hero-section,
+.skill-card,
+.project-card,
+.social-link,
+.theme-toggle {
+    transition: 
+        background-color var(--transition-slow),
+        color var(--transition-slow),
+        border-color var(--transition-slow);
+}
+
+/* Interactive elements */
+a,
+button,
+.skill-card,
+.project-card,
+.social-link {
+    transition: 
+        transform var(--transition-base),
+        box-shadow var(--transition-base),
+        color var(--transition-base),
+        background-color var(--transition-base);
+}
+
+/* ===================================
+   SCROLL REVEAL ANIMATIONS
+   =================================== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Section-specific reveals */
+.skills-section .reveal {
+    transition-delay: 0.1s;
+}
+
+.projects-section .reveal {
+    transition-delay: 0.2s;
+}
+
+.contact-section .reveal {
+    transition-delay: 0.3s;
+}
